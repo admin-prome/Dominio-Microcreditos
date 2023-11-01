@@ -20,19 +20,8 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
-        }
-
-        button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            border-style: none;
-            background-color: #E5E5E5;
-        }
-
-        h1 {
-            margin: 0;
+            font-family: Encode Sans;
+            text-align: center;
         }
 
         .triangles-top-box {
@@ -64,28 +53,21 @@
             --animate-duration: 2s;
         }
 
-        .login-div {
-            display: block;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            width: 50vw;
-            height: 30vh;
-            align-content: space-between;
+        .card {
+            background-color: #F3F3F3;
+            border-style: none;
+            padding: 2rem;
+            width: 600px;
         }
 
-        .login-title {
-            display: flex;
-            width: 100%;
-            height: 70%;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 2rem;
+        .card-text {
+            color: #4E4E4E;
+            margin: 1rem 0 1rem 0;
         }
 
-        .login-btn {
-            justify-content: center;
-            align-items: center;
+        .card-button {
+            background-color: #279D2E;
+            border-radius: 3px 8px 3px 8px;
         }
     </style>
 </head>
@@ -95,30 +77,27 @@
         <img class="triangles-top animate__animated animate__fadeInLeft" src="assets/triangles.png"
             alt="Elemento gráfico">
     </div>
-    <div class="login-div">
-        <div style="background-color: #F3F3F3; border-radius: 10px; padding: 15px;">
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-md-12" style="text-align: center; padding: 0px 30px;">
-                    <div>
-                        <img src="assets/logoColor.png" alt="Logo Provincia Microcréditos" height="58px" width="250px">
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 30px;">
-                <div class="col-md-12" style="text-align: center; padding: 0px 30px;">
 
-                    <p style="color: #4E4E4E; text-align: center;">
-                        Te invitamos a seguirnos en nuestra página
-                    </p>
-
-                    <button class="btn btn-success">
-                        <a href="https://www.provinciamicrocreditos.com.ar/"
-                            style="color: #FFFFFF; text-align: center; text-decoration: none;">Ir a la página</a>
-                    </button>
+    <div class="card">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <img src="assets/logoColor.png" alt="Provincia Microcréditos" height="58px" width="250px">
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="card-text">¡Hola! Te invitamos a seguirnos en nuestra página</p>
+
+                <button class="btn card-button">
+                    <a href="https://www.provinciamicrocreditos.com.ar/"
+                        style="color: #FFFFFF; text-align: center; text-decoration: none;">Ir a la página</a>
+                </button>
+            </div>
+        </div>
     </div>
+
     <div class="triangles-bottom-box">
         <img class="triangles-bottom animate__animated animate__fadeInRight" src="assets/triangles.png"
             alt="Elemento gráfico">
